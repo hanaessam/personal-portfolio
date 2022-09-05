@@ -1,0 +1,62 @@
+.what-i-do{
+    background-color: #F8F9FA;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.container-section {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: center;
+    text-align: left;
+    flex-wrap: wrap;
+}
+.left-container {
+    width: 50%;
+    padding-left: 50px;
+}
+.right-container {
+    width: 50%;
+    padding-right: 50px;
+}
+.service-card {
+    display: flex;
+    align-items: center;
+}
+.sticker {
+    color: #20C997;
+    font-size: 2rem;
+    background-color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    height: fit-content;
+}
+
+.cardinfo {
+    margin: 10px;
+    color: #212529;
+}
+.cardinfo h4{
+    margin: 10px 0;
+    font-size: 1.3rem;
+    color: #212529;
+}
+.cardinfo p{
+    font-size: 1.1rem;
+    color: #4c4d4d;
+}
+
+
+@media screen and (max-width: 600px) {
+    .left-container {
+        width: 100%;
+    }
+    .right-container {
+        width: 100%;
+    }
+  }
+  
+ 

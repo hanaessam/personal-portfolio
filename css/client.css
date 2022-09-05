@@ -1,0 +1,96 @@
+.client {
+  width: 90%;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.client-card {
+  width: 45%;
+  background-color: #f8f9fa;
+  padding: 50px;
+  text-align: left;
+  border-radius: 5px;
+  margin: 15px;
+}
+.client-info {
+  display: flex;
+}
+.client-avi img {
+  border-radius: 50%;
+  border: gray 0.5px solid;
+  padding: 0.5px;
+}
+.client-credentials {
+  margin: 0 20px;
+}
+.client-credentials h3,
+h4 {
+  font-size: 1rem;
+}
+.client-credentials h4 {
+  color: #6c757d;
+  margin: 5px 0;
+}
+
+.client-rev {
+  margin-top: 15px;
+}
+.stars {
+  color: #ffc107;
+  margin-top: 15px;
+}
+
+.card-slider {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.radio {
+  margin: auto;
+  width: fit-content;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.radio .radio-btn {
+  margin-left: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-clip: content-box;
+  padding: 5px;
+  background-color: #c9c9c9;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+input[type="radio"]:checked {
+  background-color: #20c997;
+  border: 1px solid #20c997;
+}
+input[type="radio"]:hover {
+  background-color: #20c997;
+  border: 1px solid #20c997;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .client-card {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 996px) {
+  .client-card {
+    width: 100%;
+  }
+}

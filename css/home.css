@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+*::selection{
+    background-color: #20C997;
+    color: white;
+}
+
+.home { 
+    height: 100vh;
+    background-image: url(../images/intro-bg.jpg);
+    background-size: cover;
+}
+
+.layer {
+    position: absolute;
+    background-color: rgba(11, 14, 18, 0.75);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+    position: absolute;
+    z-index: 999999;
+}
+
+.logo {
+    margin: 0 20px;
+}
+.links{
+    width: 45%;
+    margin: auto;
+}
+.links ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+.links a:hover, a::selection {
+    color: #20C997;
+}
+
+.slider {
+    color: white;
+    text-align: center;
+}
+.slider h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.slider p{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.slider button {
+    color: #20C997;
+    background-color: transparent;
+    border: #20C997 solid 2px;
+    padding: 15px 40px;
+    margin: 25px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+}
+.slider button:hover {
+    color: white;
+    background-color:#20C997;
+    border: #20C997 solid 2px;
+    padding: 15px 40px;
+    margin: 25px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+h1{
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin: 20px;
+}
+
+.gears {
+    font-size: 1.3rem;
+    background-color: #555555;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px;
+    position: fixed;
+    right: 0px;
+    top: 30%;
+    z-index: 9999;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.scroll-down a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.scroll-down {
+    color: white;
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    z-index: 9999;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, 0%);
+    animation: fade_move_down 2s ease-in-out infinite;
+}
+  
+
+h1::after {
+    content: " ";
+    animation: typewriter 10s ease-in-out infinite;
+}
+
+.footer {
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.left-footer, .right-footer{
+    display: flex;
+}
+.left-footer a{
+    color: #20C997;
+    font-weight: bold;
+    text-decoration: none;
+}
+.right-footer a{
+    margin-right: 20px;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.right-footer a:hover{
+    color: #20C997;
+}
+.terms {
+    padding-right: 15px;
+    border-right: #555555 dotted 1px;
+}
+
+@keyframes fade_move_down {
+    0%   { transform:translate(0,-10px); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { transform:translate(0,10px); opacity: 0; }
+  }
+
+
+@keyframes typewriter {
+            1.62%{content: "S|";}
+            3.24%{content: "Si|";}
+            4.86%{content: "Sim|";}
+            6.48%{content: "Simo|";}
+            8.10%{content: "Simon|";}
+            9.72%{content: "Simone|";}
+            11.34%{content: "Simone O|";}
+            12.96%{content: "Simone Ol|";}
+            14.58%{content: "Simone Oli|";}
+            16.20%{content: "Simone Oliv|";}
+            17.82%{content: "Simone Olivi|";}
+            19.44%{content: "Simone Olivia.|";}
+            21.06%{content: "Simone Oli|";}
+            22.68%{content: "Simone|";}
+            24.30%{content: "Simo|";}
+            25.92%{content: "S|";}
+            27.54%{content: "|";}
+            29.16%{content: "a|";}
+            30.78%{content: "a F|";}
+            32.40%{content: "a Fr|";}
+            34.02%{content: "a Fre|";}
+            35.64%{content: "a Free|";}
+            37.26%{content: "a Freel|";}
+            38.88%{content: "a Freela|";}
+            40.50%{content: "a Freelan|";}
+            42.12%{content: "a Freelanc|";}
+            43.74%{content: "a Freelance|";}
+            45.36%{content: "a Freelancer.|";}
+            46.98%{content: "a Freelanc|";}
+            48.60%{content: "a Free|";}
+            50.22%{content: "a F|";}
+            51.84%{content: "a|";}
+            53.46%{content: "a P|";}
+            55.08%{content: "a Ph|";}
+            56.70%{content: "a Pho|";}
+            58.32%{content: "a Phot|";}
+            59.94%{content: "a Photo|";}
+            61.56%{content: "a Photog|";}
+            63.18%{content: "a Photogr|";}
+            64.80%{content: "a Photogra|";}
+            66.42%{content: "a Photograp|";}
+            68.04%{content: "a Photographe|";}
+            69.66%{content: "a Photographer.|";}
+            71.28%{content: "a Photograph|";}
+            72.90%{content: "a Photogra|";}
+            74.52%{content: "a Photog|";}
+            76.14%{content: "a Phot|";}
+            77.76%{content: "a Ph|";}
+            79.38%{content: "a|";}
+            81.00%{content: "a D|";}
+            82.62%{content: "a De|";}
+            84.24%{content: "a Des|";}
+            85.86%{content: "a Desi|";}
+            87.48%{content: "a Desig|";}
+            89.10%{content: "a Design|";}
+            90.72%{content: "a Designe|";}
+            92.34%{content: "a Designer.|";}
+            93.96%{content: "a Design|";}
+            95.58%{content: "a Desi|";}
+            97.20%{content: "a De|";}
+            98.82%{content: "a|";}
+            100%{content: "|";}
+}
+
+
+@media screen and (max-width: 600px) {
+    .left-container {
+        width: 100%;
+    }
+    .right-container {
+        width: 100%;
+    }
+  }
+  
+ 
